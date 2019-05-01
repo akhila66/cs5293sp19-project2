@@ -8,7 +8,7 @@ redactpath = "project2/test/redact/*.redactor"
 def test_doextraction():
     returndata = unredactor.doextraction(trainpath)
     assert len(returndata) >= 0
-
+    
 def test_doprediction():
     trainData = unredactor.doextraction(trainpath)
     unredactor.doprediction(redactpath,trainData)
