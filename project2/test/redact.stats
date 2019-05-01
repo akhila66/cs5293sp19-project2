@@ -1,13 +1,19 @@
 
 
- the person names which are redacted from - test/pos/0_10.txt - are 
--['Ashton', 'Kutcher', 'Jake Fischer', 'Kevin Costner', 'Ben Randall']
+ the person names which are redacted from - test/pos/12173_9.txt - are 
+-['Stefan', 'Erkan']
 
- the person names which are redacted from - test/pos/1_10.txt - are 
--[]
+ the person names which are redacted from - test/pos/12174_10.txt - are 
+-['Erkan', 'Stefan']
 
- the person names which are redacted from - test/pos/2_7.txt - are 
--['Kevin', 'Costner', 'Ashton Kutcher', 'Kevin', 'Costner', 'Sela Ward', 'Costner']
+ the person names which are redacted from - test/pos/12175_9.txt - are 
+-['Erkan', 'Stefan', 'Stefan']
 
- the person names which are redacted from - test/pos/3_7.txt - are 
--['Tomorrow', 'Costner', 'Kutcher', 'Kutcher', 'Costner', 'Robinson']
+ the person names which are redacted from - test/pos/12176_10.txt - are 
+-['Erkan', 'Stefan', 'Erkan', 'Stefan']
+
+ the person names which are redacted from - test/pos/12177_8.txt - are 
+-['Marguerite', 'Akasha', 'Akasha']
+
+ the person names which are redacted from - test/pos/12178_7.txt - are 
+-['Anne Rice', 'Stuart Townsend', 'Brad Pitt', 'Disturbed', 'Anne Rice', 'John Carpenter', 'Fright Night', 'Francis Ford Coppola']
