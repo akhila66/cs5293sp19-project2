@@ -37,11 +37,13 @@ def doredact(input):
         redactfile = redactfile.replace(".txt",".redactor")
         with io.open(redactfile,'w',encoding="utf-8") as file:
             file.write(text)
-            file.close()        
-        with io.open("test/redact.stats",'w',encoding="utf-8") as file:
-            file.write(stats)
             file.close() 
-
+    # statsfile = thefile.replace("/pos/.*","/redact.stats") 
+    # statsfile = thefile.replace("test/pos/","test/redact.stats")
+    with io.open("redact.stats",'w',encoding="utf-8") as file:
+        file.write(stats)
+        file.close() 
+    return True
 if __name__=='__main__':
     #	Usage:	python3	redactor.py	'test/pos/*.txt'
     # print(doredact(sys.argv[-1]))

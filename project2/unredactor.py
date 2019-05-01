@@ -131,7 +131,6 @@ def doprediction(glob_text, trainData):
             file.write(output)
             file.close()
 
-        
 if __name__=='__main__':
     #	Usage:	python3	unredactor.py	'train/pos/*.txt'
     trainData = doextraction(sys.argv[-1])
