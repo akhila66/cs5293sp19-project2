@@ -1,0 +1,19 @@
+
+
+ the person names which are redacted from - test/pos/12173_9.txt - are 
+-['Stefan', 'Erkan']
+
+ the person names which are redacted from - test/pos/12174_10.txt - are 
+-['Erkan', 'Stefan']
+
+ the person names which are redacted from - test/pos/12175_9.txt - are 
+-['Erkan', 'Stefan', 'Stefan']
+
+ the person names which are redacted from - test/pos/12176_10.txt - are 
+-['Erkan', 'Stefan', 'Erkan', 'Stefan']
+
+ the person names which are redacted from - test/pos/12177_8.txt - are 
+-['Marguerite', 'Akasha', 'Akasha']
+
+ the person names which are redacted from - test/pos/12178_7.txt - are 
+-[]

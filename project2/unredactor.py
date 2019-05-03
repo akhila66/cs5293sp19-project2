@@ -24,7 +24,7 @@ def	get_entity(text):
 
 def get_features(persons,text):
     dic=[]
-    # f1 = c #no of times it repeating the word in sentence
+    f1 = len(persons)#no of redacted sentences in file
     for n in persons:
         featuresvec = []
         feature = []
@@ -32,9 +32,12 @@ def get_features(persons,text):
         f2 = n.count(' ') #space count
         f3 = len(n) #length of name
         f4 = len(word_tokenize(text)) #length of whole sentence
+        f5 = len(word_tokenize(n))# no of words i each name
+        featuresvec.append(f1)
         featuresvec.append(f2)
         featuresvec.append(f3)
         featuresvec.append(f4)
+        featuresvec.append(f5)
         feature.append(featuresvec)
         dic.append(feature)
     # print(dic)
@@ -61,7 +64,8 @@ def get_Redacted_Features(text):
     w=len(word_tokenize(text))
     count=0
     space=0
-    count_word=0    
+    count_word=0  
+    c = len(re.findall('[█]+', text))  
     for i in range(0,len(text)):
         if text[i]=="█":
             count_word=1
@@ -72,9 +76,11 @@ def get_Redacted_Features(text):
                 continue
             if count>0:
                 l=[]
-                l.append(space)
-                l.append(count)
-                l.append(w)
+                l.append(c) #count of redacted words
+                l.append(space) #spaces in each name
+                l.append(count) # len of name
+                l.append(w) #words in text
+                l.append(space+1) #no of words in each redacted word
                 feature.append(l)
             count=0     
             space=0
